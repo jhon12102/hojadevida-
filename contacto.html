@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto - Tienda Principal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script async 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaiBmZ2NsPRneNSjAo9Uh4gpLpbPtn6R4">
+  </script>
+  <script type="module" 
+    src="https://unpkg.com/@googlemaps/extended-component-library@latest">
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    gmp-map {
+      height: 500px;
+      width: 100%;
+      display: block;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col items-center justify-center p-6">
+
+  <h1 class="text-3xl font-bold text-blue-700 mb-4">Ubicación - Tienda Principal</h1>
+
+  <gmp-map center="-0.331732,-78.442564" zoom="16" map-id="DEMO_MAP_ID">
+    <gmp-advanced-marker 
+      position="-0.331732,-78.442564" 
+      title="Tienda Principal">
+    </gmp-advanced-marker>
+  </gmp-map>
+
+  <a href="index.html" class="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+    Volver a Inicio
+  </a>
+
+</body>
+</html>
